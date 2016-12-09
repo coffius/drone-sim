@@ -22,7 +22,7 @@ class PlatformSpec extends FlatSpec with Matchers {
   it should "simulate drone movement correctly. Example #1" in {
     val platform = new Platform(Point(5, 5))
     val result = platform.simulateDrone(
-      Point(1, 2), North, Seq(Left, Move, Left, Move, Left, Move, Left, Move, Move)
+      Point(1, 2), North, Seq(TurnLeft, Move, TurnLeft, Move, TurnLeft, Move, TurnLeft, Move, Move)
     )
 
     result shouldBe a[Success[_]]
@@ -34,7 +34,7 @@ class PlatformSpec extends FlatSpec with Matchers {
   it should "simulate drone movement correctly. Example #2" in {
     val platform = new Platform(Point(5, 5))
     val result = platform.simulateDrone(
-      Point(3, 3), North, Seq(Move, Move, Right, Move, Move, Right, Move, Right, Right, Move)
+      Point(3, 3), North, Seq(Move, Move, TurnRight, Move, Move, TurnRight, Move, TurnRight, TurnRight, Move)
     )
 
     result shouldBe a[Success[_]]
@@ -51,7 +51,7 @@ class PlatformSpec extends FlatSpec with Matchers {
 
   it should "return OutOfBoundaries(...) if a drone leaves the platform" in {
     val platform = new Platform(Point(5, 5))
-    val result = platform.simulateDrone(Point(0, 0), North, Seq(Right, Move, Move, Move, Move, Move, Move))
+    val result = platform.simulateDrone(Point(0, 0), North, Seq(TurnRight, Move, Move, Move, Move, Move, Move))
     result shouldBe Failure(OutOfBoundaries(Point(6, 6), East))
   }
 }
