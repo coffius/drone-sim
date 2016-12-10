@@ -30,4 +30,16 @@ object Direction {
     override def right: Direction = North
   }
 
+  private val values: Map[String, Direction] = Map(
+    North.inputName.toString -> North,
+    East.inputName.toString -> East,
+    South.inputName.toString -> South,
+    West.inputName.toString -> West
+  )
+
+  def isDirection(string: String): Boolean = {
+    values.keys.exists(_ == string)
+  }
+
+  def toDirection(string: String): Direction = values(string)
 }
