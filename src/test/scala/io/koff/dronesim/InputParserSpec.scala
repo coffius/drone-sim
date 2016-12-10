@@ -3,7 +3,7 @@ package io.koff.dronesim
 import java.io.{ByteArrayInputStream, InputStream}
 
 import io.koff.dronesim.model.Direction.{East, North}
-import io.koff.dronesim.model.DroneCommand
+import io.koff.dronesim.model.{DroneCommand, Point}
 import io.koff.dronesim.model.DroneCommand.{Move, TurnLeft, TurnRight}
 import io.koff.dronesim.parser.{DroneStartState, InputParser, ParseException}
 import org.scalatest.{FreeSpec, Matchers}

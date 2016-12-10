@@ -2,8 +2,7 @@ package io.koff.dronesim.parser
 
 import java.io.InputStream
 
-import io.koff.dronesim.Point
-import io.koff.dronesim.model.{Direction, DroneCommand}
+import io.koff.dronesim.model.{Direction, DroneCommand, Point}
 
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source

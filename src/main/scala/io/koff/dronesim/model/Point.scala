@@ -1,4 +1,4 @@
-package io.koff.dronesim
+package io.koff.dronesim.model
 
 /**
   * 2D coordinate

@@ -1,7 +1,5 @@
 package io.koff.dronesim.model
 
-import io.koff.dronesim.Point
-
 /**
   * Direction
   */

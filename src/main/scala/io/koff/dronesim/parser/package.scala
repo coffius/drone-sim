@@ -1,6 +1,6 @@
 package io.koff.dronesim
 
-import io.koff.dronesim.model.{Direction, DroneCommand}
+import io.koff.dronesim.model.{Direction, DroneCommand, Point}
 
 package object parser {
   case class SimulationInput(upperRightCorner: Point, droneInputs: Seq[DroneInput])

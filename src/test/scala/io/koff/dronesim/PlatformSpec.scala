@@ -2,7 +2,7 @@ package io.koff.dronesim
 
 import io.koff.dronesim.model.Direction._
 import io.koff.dronesim.model.DroneCommand._
-import io.koff.dronesim.model.Platform
+import io.koff.dronesim.model.{Platform, Point}
 import io.koff.dronesim.model.Platform.{InvalidInitPosition, OutOfBoundaries}
 import org.scalatest._
 
