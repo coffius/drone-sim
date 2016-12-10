@@ -3,6 +3,7 @@ package io.koff.dronesim.model
 import io.koff.dronesim._
 import io.koff.dronesim.model.DroneCommand._
 import io.koff.dronesim.model.Platform.{InvalidInitPosition, OutOfBoundaries}
+import io.koff.dronesim.parser.SimulationInput
 
 import scala.annotation.tailrec
 
