@@ -1,7 +1,8 @@
-package io.koff.dronesim
+package io.koff.dronesim.parser
 
 import java.io.InputStream
 
+import io.koff.dronesim.Point
 import io.koff.dronesim.model.{Direction, DroneCommand}
 
 import scala.collection.mutable.ArrayBuffer
@@ -117,10 +118,4 @@ object InputParser {
       }
     }
   }
-
-  case class SimulationInput(upperRightCorner: Point, droneInputs: Seq[DroneInput])
-  case class DroneStartState(startPos: Point, startDir: Direction)
-  case class DroneInput(startState:DroneStartState, commands: Seq[DroneCommand])
 }
-
-class ParseException(action: String, line: String) extends Exception(s"Error during action[$action] in line[$line]")
