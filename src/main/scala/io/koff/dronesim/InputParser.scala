@@ -2,6 +2,8 @@ package io.koff.dronesim
 
 import java.io.InputStream
 
+import io.koff.dronesim.model.{Direction, DroneCommand}
+
 import scala.collection.mutable.ArrayBuffer
 import scala.io.Source
 import scala.util.Try

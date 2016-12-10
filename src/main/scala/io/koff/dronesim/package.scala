@@ -1,5 +1,7 @@
 package io.koff
 
+import io.koff.dronesim.model.Drone
+
 /**
   * Additional classes
   */

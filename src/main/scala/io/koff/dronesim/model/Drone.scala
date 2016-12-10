@@ -1,4 +1,6 @@
-package io.koff.dronesim
+package io.koff.dronesim.model
+
+import io.koff.dronesim.Point
 
 /**
   * Represents a drone which can fly around the platform

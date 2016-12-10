@@ -1,8 +1,9 @@
 package io.koff.dronesim
 
-import io.koff.dronesim.Direction._
-import io.koff.dronesim.DroneCommand._
-import io.koff.dronesim.Platform.{InvalidInitPosition, OutOfBoundaries}
+import io.koff.dronesim.model.Direction._
+import io.koff.dronesim.model.DroneCommand._
+import io.koff.dronesim.model.Platform
+import io.koff.dronesim.model.Platform.{InvalidInitPosition, OutOfBoundaries}
 import org.scalatest._
 
 /**

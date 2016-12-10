@@ -1,7 +1,8 @@
-package io.koff.dronesim
+package io.koff.dronesim.model
 
-import io.koff.dronesim.DroneCommand.{Move, TurnLeft, TurnRight}
-import io.koff.dronesim.Platform.{InvalidInitPosition, OutOfBoundaries}
+import io.koff.dronesim._
+import io.koff.dronesim.model.DroneCommand._
+import io.koff.dronesim.model.Platform.{InvalidInitPosition, OutOfBoundaries}
 
 import scala.annotation.tailrec
 

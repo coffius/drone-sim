@@ -2,9 +2,10 @@ package io.koff.dronesim
 
 import java.io.{ByteArrayInputStream, InputStream}
 
-import io.koff.dronesim.Direction.{East, North}
-import io.koff.dronesim.DroneCommand.{Move, TurnLeft, TurnRight}
+import io.koff.dronesim.model.Direction.{East, North}
+import io.koff.dronesim.model.DroneCommand.{Move, TurnLeft, TurnRight}
 import io.koff.dronesim.InputParser.DroneStartState
+import io.koff.dronesim.model.DroneCommand
 import org.scalatest.{FlatSpec, FreeSpec, Matchers}
 
 import scala.language.implicitConversions
